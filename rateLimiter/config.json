@@ -1,0 +1,51 @@
+{
+    
+"Users":[
+    {
+        "userID" : "ABCX",
+        "limits":[
+            {
+            "route":"/abc/xyz",
+            "type": "get",
+            "rate":100,
+            "limit":300
+            },
+            {
+             "route":"/abc/xyz",
+             "type": "get",
+             "rate":100,
+             "limit":300
+            },
+            {
+              "route":"DEFAULT",
+              "type": "ANY",
+              "rate":200,
+              "limit":200
+            }
+        ]
+    }  ,
+    {
+        "userID" : "ABC",
+        "limits":[
+            {
+            "route":"/v1/time",
+            "type": "GET",
+            "rate":2,
+            "limit":8
+            },
+            {
+             "route":"/v1/hello",
+             "type": "GET",
+             "rate":1,
+             "limit":2
+            },
+            {
+              "route":"DEFAULT",
+              "type": "ANY",
+              "rate":1,
+              "limit":1
+            }
+        ]
+    }  
+]
+}
